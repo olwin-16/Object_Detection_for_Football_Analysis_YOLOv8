@@ -1,0 +1,9 @@
+train: /content/drive/MyDrive/Colab Notebooks/ObjectDetection/Dataset/train/images
+val: /content/drive/MyDrive/Colab Notebooks/ObjectDetection/Dataset/valid/images
+#test: /content/drive/MyDrive/Colab Notebooks/ObjectDetection/Dataset/test/images  #optional
+
+nc: 3
+names: ['Ball', 'Player', 'Referee']
+
+#roboflow:
+ #url: https://universe.roboflow.com/nikhil-chapre-xgndf/detect-players-dgxz0/dataset/7
