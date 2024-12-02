@@ -58,11 +58,11 @@ Football Dataset: Custom dataset used for detecting players, referees, and balls
 
 # Installation & Setup
 
-Clone the repository (cmd)
+Clone the repository:
+`git clone https://github.com/olwin-16/Objectify.git`
 
-'git clone https://github.com/olwin-16/Objectify.git'
-
-'cd Objectify'
+Navigate into the directory:
+`cd Objectify`
 
 # License
 
