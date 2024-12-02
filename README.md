@@ -1,4 +1,4 @@
-## Object Detection Project
+# Object Detection Project
 
 # Project Overview
 
@@ -37,3 +37,30 @@ Contents:
 Architecture diagrams for model training
 Training graphs and loss curves
 Visual examples of object detection results
+
+# Datasets Used
+
+COCO 2017: A comprehensive dataset with 80 object classes commonly used for object detection tasks.
+Balloon Dataset: Custom dataset for training models to detect balloons.
+Football Dataset: Custom dataset used for detecting players, referees, and balls.
+
+# Installation & Setup
+
+Clone the repository (cmd)
+
+git clone https://github.com/olwin-16/Objectify.git
+cd Objectify
+
+# License
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+# Acknowledgments
+
+Special thanks to the developers and contributors of Detectron2 and YOLOv8 for their innovative open-source frameworks.
+The COCO dataset team for providing a benchmark dataset for object detection tasks.
+
+# Contact
+
+For any questions or contributions, please contact Olwin Christian at olwinchristian1626@gmail.com
+
