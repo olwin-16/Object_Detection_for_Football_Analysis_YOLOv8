@@ -1,0 +1,3 @@
+[submodule "Detectron2/Objectify"]
+	path = Detectron2/Objectify
+	url = https://github.com/olwin-16/Objectify.git
