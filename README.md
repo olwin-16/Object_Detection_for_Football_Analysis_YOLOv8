@@ -1,8 +1,8 @@
-# Object Detection Project
+# Objectify: Real-Time Object Detection for Football Analysis
 
 ## Project Overview
 
-This repository contains code and resources for training and deploying object detection models using various architectures like Detectron2 and YOLOv8. The project utilizes datasets such as COCO 2017 and custom datasets like Balloon and Football to detect and classify objects.
+The Objectify project is designed to develop an advanced deep learning model for analyzing football video clips. The goal is to identify and track players, the ball, and referees in real-time. Using state-of-the-art deep learning frameworks such as Faster R-CNN and YOLOv8, Objectify aims to efficiently process video frames to deliver accurate object detection, complete with bounding boxes and class labels. The project employs Python-based tools like PyTorch and Roboflow to facilitate model training and testing on custom-annotated datasets within Google Colab.
 
 <img width="473" alt="FasterRCNN_Public_Results" src="https://github.com/user-attachments/assets/11f7e837-07d1-4a4f-badc-216c547cc612">
 
@@ -48,11 +48,63 @@ Visual examples of object detection results
 
 ## Datasets Used
 
-COCO 2017: A comprehensive dataset with 80 object classes commonly used for object detection tasks.
+### COCO 2017 Dataset Class Names
 
-Balloon Dataset: Custom dataset for training models to detect balloons.
+Below is the list of class names:
 
-Football Dataset: Custom dataset used for detecting players, referees, and balls.
+COCO_CLASSES = [
+    'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train',
+    'truck', 'boat', 'traffic light', 'fire hydrant', 'stop sign', 'parking meter',
+    'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 'elephant', 'bear',
+    'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase',
+    'frisbee', 'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat',
+    'baseball glove', 'skateboard', 'surfboard', 'tennis racket', 'bottle',
+    'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
+    'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut',
+    'cake', 'chair', 'couch', 'potted plant', 'bed', 'dining table', 'toilet',
+    'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone', 'microwave',
+    'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors',
+    'teddy bear', 'hair drier', 'toothbrush'
+]
+
+
+The `coco_classes.txt` file contains a list of 80 class names used for object detection in the COCO 2017 dataset. 
+
+This file can be referenced when training or evaluating models in the `Detectron2` and `Balloon` modules.
+
+To use these class names in your project, you can import the file into your code or copy and use the list directly.
+
+### YAML Dataset
+
+train: /content/drive/MyDrive/Colab Notebooks/ObjectDetection/Dataset/train/images
+val: /content/drive/MyDrive/Colab Notebooks/ObjectDetection/Dataset/valid/images
+#test: /content/drive/MyDrive/Colab Notebooks/ObjectDetection/Dataset/test/images  #optional
+
+nc: 3
+names: ['Ball', 'Player', 'Referee']
+
+#roboflow:
+ #url: https://universe.roboflow.com/nikhil-chapre-xgndf/detect-players-dgxz0/dataset/7
+
+## Applications
+
+### Autonomous Smart Solutions
+
+Autonomous Inventory Detection: Advanced detection solutions to monitor and manage inventory.
+
+Autonomous Airfield Surveillance: Ensures safety and operational efficiency in airfield environments.
+
+### Smart City Solutions
+
+Pothole Detection: Utilizes object detection to monitor road conditions and identify potholes.
+
+Waste Management: Automated solutions for monitoring waste levels and optimizing collection schedules.
+
+### Autonomous Detection and Identification
+
+License Plate Detection: Real-time identification and analysis of vehicle license plates for traffic and security applications.
+
+Autonomous Vehicle Detection: Advanced models to detect and monitor vehicles for safety and traffic management.
 
 ## Installation & Setup
 
