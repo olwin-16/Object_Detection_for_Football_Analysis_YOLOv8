@@ -86,26 +86,6 @@ names: ['Ball', 'Player', 'Referee']
 #roboflow:
  #url: https://universe.roboflow.com/nikhil-chapre-xgndf/detect-players-dgxz0/dataset/7
 
-## Applications
-
-### Autonomous Smart Solutions
-
-Autonomous Inventory Detection: Advanced detection solutions to monitor and manage inventory.
-
-Autonomous Airfield Surveillance: Ensures safety and operational efficiency in airfield environments.
-
-### Smart City Solutions
-
-Pothole Detection: Utilizes object detection to monitor road conditions and identify potholes.
-
-Waste Management: Automated solutions for monitoring waste levels and optimizing collection schedules.
-
-### Autonomous Detection and Identification
-
-License Plate Detection: Real-time identification and analysis of vehicle license plates for traffic and security applications.
-
-Autonomous Vehicle Detection: Advanced models to detect and monitor vehicles for safety and traffic management.
-
 ## Installation & Setup
 
 Clone the repository:
